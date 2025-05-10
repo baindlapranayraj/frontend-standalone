@@ -1175,12 +1175,7 @@ const Gandalf = () => {
         <div className="market-tiles-container">
           {market.map((market) => (
             <MarketTile
-              key={market.id}
-              question={market.question}
-              yesPrice={market.yesPrice}
-              noPrice={market.noPrice}
-              yesMultiplier={market.yesMultiplier}
-              noMultiplier={market.noMultiplier}
+              market={market}
               onClick={() => handleMarketSelect(market)}
             />
           ))}

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 
 .twitter-market-card {
   width: 100%;
@@ -8,7 +8,7 @@
   border-radius: 24px;
   padding: 32px;
   color: white;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
@@ -71,7 +71,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   transition: transform 0.2s ease;
 }
 
@@ -104,7 +104,7 @@
   border-radius: 12px;
   padding: 16px;
   color: white;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 1rem;
 }
 
@@ -116,7 +116,7 @@
   color: white;
   font-weight: 700;
   cursor: pointer;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   transition: transform 0.2s ease;
 }
 
@@ -129,7 +129,10 @@
 
 .footer-section {
   display: grid;
-  grid-template-columns: minmax(100px, 1fr) auto minmax(150px, 1fr) auto minmax(150px, 1fr);
+  grid-template-columns: minmax(100px, 1fr) auto minmax(150px, 1fr) auto minmax(
+      150px,
+      1fr
+    );
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -251,7 +254,8 @@
   border: 1px solid #10b981;
 }
 
-.yes-button:hover, .yes-button.selected {
+.yes-button:hover,
+.yes-button.selected {
   background: rgba(16, 185, 129, 0.2);
 }
 
@@ -261,7 +265,8 @@
   border: 1px solid #ef4444;
 }
 
-.no-button:hover, .no-button.selected {
+.no-button:hover,
+.no-button.selected {
   background: rgba(239, 68, 68, 0.2);
 }
 
@@ -326,7 +331,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .countdown-number {
@@ -356,7 +361,7 @@
 
 .market-reserve-value {
   color: #00ff9d;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 2rem;
   text-shadow: 0 0 10px rgba(0, 255, 157, 0.3);
@@ -406,7 +411,7 @@
 }
 
 .loading-dots::after {
-  content: '...';
+  content: "...";
   animation: dots 1.5s steps(4, end) infinite;
   display: inline-block;
   width: 1.5em;
@@ -414,10 +419,20 @@
 }
 
 @keyframes dots {
-  0%, 20% { content: ''; }
-  40% { content: '.'; }
-  60% { content: '..'; }
-  80%, 100% { content: '...'; }
+  0%,
+  20% {
+    content: "";
+  }
+  40% {
+    content: ".";
+  }
+  60% {
+    content: "..";
+  }
+  80%,
+  100% {
+    content: "...";
+  }
 }
 
 .approval-note {
@@ -429,8 +444,13 @@
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .success-notification {
